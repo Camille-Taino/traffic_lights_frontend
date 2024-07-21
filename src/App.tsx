@@ -1,26 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { CssBaseline, Container, Typography } from "@mui/material";
+import TrafficLightComponents from "./TrafficLightsContainer";
 
-function App() {
-  return (
-    <div className="App">
+const App = () => (
+  <>
+    <CssBaseline />
+    <Container maxWidth="sm">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Typography variant="h4" component="h1" gutterBottom>
+          NET Traffic Light System
+        </Typography>
+        <TrafficLightComponents />
       </header>
-    </div>
-  );
-}
+    </Container>
+  </>
+);
 
 export default App;
